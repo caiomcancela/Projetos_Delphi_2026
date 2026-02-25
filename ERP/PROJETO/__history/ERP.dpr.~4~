@@ -1,0 +1,17 @@
+program ERP;
+
+uses
+  Vcl.Forms,
+  FormLogin in '..\FORMS\FormLogin.pas' {Form_Login},
+  FormPrincipal in '..\FORMS\FormPrincipal.pas' {Form_Principal},
+  FormProdutos in '..\FORMS\FormProdutos.pas' {Form_Produtos};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm_Login, Form_Login);
+  Application.CreateForm(TForm_Produtos, Form_Produtos);
+  Application.Run;
+end.

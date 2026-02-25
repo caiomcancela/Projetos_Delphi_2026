@@ -1,0 +1,18 @@
+program ERP;
+
+uses
+  Vcl.Forms,
+  FormLogin in '..\FORMS\UFormLogin.pas' {Form_Login},
+  FormPrincipal in '..\FORMS\UFormPrincipal.pas' {Form_Principal},
+  FormProdutos in '..\FORMS\UFormProdutos.pas' {Form_Produtos},
+  UDM in '..\FORMS\UDm.pas' {DataModule1: TDataModule};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm_Login, Form_Login);
+  Application.CreateForm(TDataModule1, DataModule1);
+  Application.Run;
+end.

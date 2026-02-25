@@ -1,0 +1,33 @@
+object Form_Principal: TForm_Principal
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Form_Principal'
+  ClientHeight = 515
+  ClientWidth = 896
+  Color = clInactiveBorder
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  Position = poScreenCenter
+  OnClose = FormClose
+  OnDestroy = FormDestroy
+  TextHeight = 15
+  object Btn_CadastroProduto: TcxButton
+    Left = 8
+    Top = 24
+    Width = 113
+    Height = 33
+    Hint = 'Area do cadastro de produtos'
+    Caption = 'Produtos'
+    LookAndFeel.Kind = lfUltraFlat
+    LookAndFeel.NativeStyle = False
+    LookAndFeel.ScrollMode = scmDefault
+    LookAndFeel.SkinName = 'GlassOceans'
+    TabOrder = 0
+    OnClick = Btn_CadastroProdutoClick
+  end
+end

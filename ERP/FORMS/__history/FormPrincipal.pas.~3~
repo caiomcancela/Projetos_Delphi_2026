@@ -1,0 +1,34 @@
+unit FormPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
+
+type
+  TForm_Principal = class(TForm)
+    procedure FormShow(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form_Principal: TForm_Principal;
+
+implementation
+
+{$R *.dfm}
+
+uses FormLogin;
+
+procedure TForm_Principal.FormShow(Sender: TObject);
+begin
+if Assigned(Form_Login) then
+FreeAndNil(Form_Login);
+//Perguntar valtencir se seria a forma ideal
+end;
+
+end.
